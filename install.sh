@@ -540,7 +540,6 @@ DOCKERMGR_ENABLE_INSTALL_SCRIPT="yes"
 # Set custom container enviroment variables - [MYVAR="VAR"]
 __custom_docker_env() {
   cat <<EOF | tee -p | grep -v '^$'
-PORT=$CONTAINER_WEB_SERVER_INT_PORT
 SERVER_API_ROUTES_TIMEOUT_MS=10000
 SERVER_CORS_ORIGINS='*'
 NOTES_MAX_ENCRYPTED_PAYLOAD_LENGTH=5242880
